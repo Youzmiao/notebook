@@ -14,70 +14,9 @@
 - 统一的API请求处理：错误处理、token自动添加、请求响应拦截
 - 响应式UI设计：适配多种终端设备
 
-## 技术栈
 
-- 前端框架：UniApp + Vue3 + Vuex
-- UI组件：UniUI
-- 样式预处理：SCSS
-- 请求封装：基于uni.request的封装
-- 状态管理：Vuex
-- 构建工具：Vite
-- 跨平台支持：H5、微信小程序、APP等
 
-## 项目结构
 
-```
-uni-preset-vue-vite/
-├── dist/                 # 编译打包目录
-├── src/                  # 源代码
-│   ├── api/              # API接口封装
-│   │   ├── memo.js       # 备忘录相关API
-│   │   └── user.js       # 用户相关API
-│   ├── pages/            # 页面目录
-│   │   ├── index/        # 首页
-│   │   ├── login/        # 登录页
-│   │   ├── register/     # 注册页
-│   │   └── memo/         # 备忘录相关页面
-│   ├── static/           # 静态资源
-│   │   └── images/       # 图片资源
-│   ├── store/            # Vuex状态管理
-│   │   ├── index.js      # store入口
-│   │   └── modules/      # store模块
-│   │       ├── memo.js   # 备忘录模块
-│   │       └── user.js   # 用户模块
-│   ├── utils/            # 工具函数
-│   │   ├── request.js    # 请求封装
-│   │   └── token.js      # token管理
-│   ├── App.vue           # 应用入口组件
-│   ├── main.js           # 应用入口JS
-│   ├── pages.json        # 页面路由配置
-│   ├── manifest.json     # 应用配置
-│   └── uni.scss          # 全局样式变量
-├── index.html            # H5入口HTML
-└── package.json          # 项目依赖配置
-```
-
-## API接口说明
-
-应用对接了以下主要API接口：
-
-### 用户相关
-
-- `/api/user/login`：用户登录
-- `/api/user/register`：用户注册
-- `/api/user/forget-password`：忘记密码
-
-### 备忘录相关
-
-- `/api/memo/list`：获取备忘录列表
-- `/api/memo/detail`：获取备忘录详情
-- `/api/memo/create`：创建备忘录
-- `/api/memo/update`：更新备忘录
-- `/api/memo/delete`：删除备忘录
-- `/api/memo/share`：分享备忘录
-- `/api/memo/search`：搜索备忘录
-
-更详细的API文档请参考 `api-docs.md` 文件。
 
 ## 安装与运行
 
