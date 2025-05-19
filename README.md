@@ -136,9 +136,6 @@ npm run build:mp-weixin
 - 本地开发时API默认地址为：`https://qpmqdrflsvas.sealoshzh.site`
 - 如需修改API地址，请在 `src/utils/request.js` 文件中修改 `BASE_URL` 常量
 
-## 项目截图
-
-（这里可以放一些应用的截图）
 
 ## 贡献指南
 
